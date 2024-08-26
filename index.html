@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompanyName - Builders Specializing in Outdoor Spaces</title>
+        <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="nobg-logo.png" alt="CompanyName Logo" class="desktop">
+        <img src="nobg-logo.png" alt="CompanyName Mobile Logo" class="mobile">
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="navbar-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="our-work.html">Our Work</a>
+            <a href="contact-us.html">Contact Us</a>
+        </div>
+    </div>
+
+<!-- quotes Bar -->
+<div class="quotes-bar">
+    <h3>Free Consultations and Quotes</h3>
+    <div class="contact-info">
+        <div class="contact-item">
+            <img src="phone-icon-white.png" alt="Call Icon">
+            <span class="contact-text">1234567890</span>
+        </div>
+        <div class="contact-item">
+            <img src="email-icon-white.png" alt="Email Icon">
+            <span class="contact-text">msbuilders@email.com</span>
+        </div>
+    </div>
+</div>
+
+<div class="info-bar">
+    <div class="info-bar-images">
+        <div class="info-bar-image">
+            <img src="eveningpergola.png" alt="Image 1 Description">
+        </div>
+        <div class="info-bar-image">
+            <img src="eveningpergola.png" alt="Image 2 Description">
+        </div>
+    </div>
+    <div class="info-bar-text">
+<h3>Our Specialties</h3>
+<p>At MoonStar, we are master builders with expertise in constructing canopies, gazebos, decking, and media walls. Our skilled team is committed to designing and constructing outdoor spaces that are not only functional but also aesthetically stunning. Whether you're looking to elevate your garden with a sophisticated gazebo or protect your vehicle with a custom-engineered canopy, we have the craftsmanship and experience to deliver superior, high-quality results.</p>
+<p>Beyond our core services, we also offer a comprehensive range of construction solutions, including the creation of bespoke media walls, custom-designed outdoor furniture, and more. Whatever your vision, we are here to construct it with precision, care, and the utmost attention to detail. Additionally, we can accommodate further building work upon request, ensuring all your construction needs are met under one roof.</p>
+
+    </div>
+</div>
+
+
+<!-- Why Choose Us Bar -->
+<div class="why-choose-us-bar">
+    <h2>Why Choose Us</h2>
+    <div class="why-choose-us-boxes">
+        <div class="box">
+            <h3>Premium Quality Materials</h3>
+            <p>We use the highest grade materials, ensuring durability, aesthetics, and long-lasting performance for your outdoor spaces.</p>
+        </div>
+        <div class="box">
+            <h3>Expert Craftsmanship</h3>
+            <p>Our skilled artisans bring years of experience to every project, delivering exceptional quality, meticulous attention to detail, and a flawless finish.</p>
+        </div>
+        <div class="box">
+            <h3>Diverse Range of Designs</h3>
+            <p>From modern to classic styles, we offer a diverse selection of designs that can be customized to perfectly match your taste and outdoor environment.</p>
+        </div>
+    </div>
+</div> 
+
+<!-- About Our Canopies Bar -->
+<div class="about-canopies-bar">
+    <h2>About Our Canopies</h2>
+    <div class="about-canopies-content">
+        <div class="about-canopies-box">
+            <h3>Materials</h3>
+            <p>Our canopies are made from aluminium frames that are naturally rust-resistant. It comes with a choice of two colours and a choice of Standard or High-Strength Aluminium frame. The glazing is made of heavy-duty impact-resistant polycarbonate.
+			</p>
+        </div>
+        <div class="about-canopies-box">
+            <h3>Bespoke Design</h3>
+            <p>It is a high-end completely bespoke design service; every single project will be unique, and a bespoke 3D-Drawing is provided with every project.</p>
+        </div>
+        <div class="about-canopies-box">
+            <h3>Maintenance</h3>
+            <p>Our canopy frames are made from powder-coated aluminium which means that they are very strong and virtually maintenance-free. They will not rust and do not need to follow up with treatments or painting.
+			</p>
+        </div>
+		<div class="contact-canopies-box" href="contact-us.html">
+            <p>Have questions or need more information? <a href="contact-us.html">Contact us</a> today for personalised assistance.</p>
+			<h3> <a href="contact-us.html">Get in Touch</a></h3>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 MoonStar. All rights reserved.
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    var navLinks = document.querySelectorAll('.navbar a');
+    var currentPage = window.location.href;
+
+    navLinks.forEach(function(link) {
+        if (link.href === currentPage) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+
+    // Optionally, handle the click event to update the active link
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            navLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+            this.classList.add('active');
+        });
+    });
+});
+
+    </script>
+
+</body>
+</html>
