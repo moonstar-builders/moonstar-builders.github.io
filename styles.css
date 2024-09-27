@@ -309,6 +309,24 @@ p {
         border-left: none;
         border-right: none;
     }
+	
+	.box2 {
+    flex: 1; /* Each box takes equal space */
+    margin: 0 10px; /* Add margin between boxes */
+    text-align: center; /* Center-align the text */
+    padding: 10px; /* Add padding inside the box */
+}
+
+	.box2 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #154d57; /* Subheading color */
+	}
+	
+	.box2:nth-child(5) {
+    border-left: none;
+    border-right: none;
+    }
 }
 
 
